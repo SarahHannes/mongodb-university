@@ -16,7 +16,7 @@
 
 >Yes. `MongoServerError: E11000 duplicate key error collection: sample_training.grades index: _id_ dup key: { _id: ObjectId('56d5f7eb604eb380b0d8d8ce') }`
 > ```
-> db.grades.insertOne({ _id: ObjectId("56d5f7eb604eb380b0d8d8ce"), student_id: 0, scores: [ { type: 'exam', score: 78.40446309504266 }, { type: 'quiz', score: 73.36224783231339 }, { type: 'homework', score: 46.980982486720535 }, { type: 'homework', score: 76.67556138656222 }], class_id: 339 })```
+> db.grades.insertOne({ _id: ObjectId("56d5f7eb604eb380b0d8d8ce"), student_id: 0, scores: [ { type: 'exam', score: 78.40446309504266 }, { type: 'quiz', score: 73.36224783231339 }, { type: 'homework', score: 46.980982486720535 }, { type: 'homework', score: 76.67556138656222 }], class_id: 339 })
 
 
 3. Insert that document into the collection without the _id field to get a successfull insert. Did it work?
@@ -26,7 +26,7 @@
   insertedId: ObjectId("62b013c36e67fe1bcfac7016")
 }`
 > ```
->db.grades.insertOne({ student_id: 0, scores: [ { type: 'exam', score: 78.40446309504266 }, { type: 'quiz', score: 73.36224783231339 }, { type: 'homework', score: 46.980982486720535 }, { type: 'homework', score: 76.67556138656222 }], class_id: 339 }) ```
+>db.grades.insertOne({ student_id: 0, scores: [ { type: 'exam', score: 78.40446309504266 }, { type: 'quiz', score: 73.36224783231339 }, { type: 'homework', score: 46.980982486720535 }, { type: 'homework', score: 76.67556138656222 }], class_id: 339 })
 
 
 ### Inserting New Documents - insert() order:
